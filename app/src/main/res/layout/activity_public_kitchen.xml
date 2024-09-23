@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- First gray platform with two red clickable objects -->
+    <LinearLayout
+        android:id="@+id/platform1"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/platform_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- First clickable object (red) -->
+        <Button
+            android:id="@+id/buttonFindSpot1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/place_btn1"
+
+            android:text="@string/PlaceCondi_1" />
+
+        <!-- Second clickable object (red) -->
+        <Button
+            android:id="@+id/buttonEmpty1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/place_btn3"
+
+            android:text="@string/PlaceCondi_3" />
+    </LinearLayout>
+
+    <!-- Second gray platform -->
+    <LinearLayout
+        android:id="@+id/platform2"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/platform_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/platform1">
+
+        <!-- First clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/place_btn1"
+            android:text="@string/PlaceCondi_1" />
+
+        <!-- Second clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/place_btn2"
+
+            android:text="@string/PlaceCondi_2" />
+    </LinearLayout>
+
+    <!-- Third gray platform -->
+    <LinearLayout
+        android:id="@+id/platform3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/platform_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/platform2">
+
+        <!-- First clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/place_btn3"
+            android:text="@string/PlaceCondi_3" />
+
+        <!-- Second clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/place_btn1"
+
+            android:text="@string/PlaceCondi_1" />
+    </LinearLayout>
+
+    <!-- Fourth gray platform -->
+    <LinearLayout
+        android:id="@+id/platform4"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/platform_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/platform3">
+
+        <!-- First clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/place_btn1"
+
+            android:text="@string/PlaceCondi_1" />
+
+        <!-- Second clickable object (red) -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/place_btn1"
+
+            android:text="@string/PlaceCondi_1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

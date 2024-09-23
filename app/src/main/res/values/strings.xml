@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Test2</string>
+    <string name="card_text_1">Public Kitchen</string>
+    <string name="card_text_2">Private Kitchen</string>
+    <string name="card_text_3">My Kitchen</string>
+    <string name="Ingredient1">Banana</string>
+    <string name="Ingredient2">Pineapple</string>
+    <string name="Ingredient3">Beef</string>
+    <string name="Ingredient4">Chicken</string>
+    <string name="Ingredient5">Onion</string>
+    <string name="PlaceCondi_1">Booked</string>
+    <string name="PlaceCondi_2">One Placed</string>
+    <string name="PlaceCondi_3">Empty</string>
+</resources>
