@@ -1,8 +1,10 @@
 package com.example.test2;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -113,6 +115,15 @@ public class MyKitchenActivity extends AppCompatActivity {
 
         dropZone = findViewById(R.id.drop_zone);
 
+        dropZone.setOnClickListener(v -> {
+            if (draggedItems.size() == 2) {
+                showDialog();
+            } else {
+                Toast.makeText(MyKitchenActivity.this, "请拖入两个项目", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
 
         initDraggable(findViewById(R.id.banana), "banana");
         initDraggable(findViewById(R.id.pineapple), "pineapple");
@@ -124,21 +135,21 @@ public class MyKitchenActivity extends AppCompatActivity {
             public boolean onDrag(View v, DragEvent event) {
                 switch (event.getAction()) {
                     case DragEvent.ACTION_DRAG_STARTED:
-                        // 确保拖动开始时视图可拖动
+
                         return event.getClipDescription().hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN);
 
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        // 拖动到目标区域时
+
                         v.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
                         return true;
 
                     case DragEvent.ACTION_DRAG_EXITED:
-                        // 拖出目标区域时
+
                         v.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                         return true;
 
                     case DragEvent.ACTION_DROP:
-                        // 获取被拖动的视图
+
                         String tag = event.getClipData().getItemAt(0).getText().toString();
                         View draggedView = findViewById(getResources().getIdentifier(tag, "id", getPackageName()));
                         if (draggedView != null) {
@@ -147,7 +158,7 @@ public class MyKitchenActivity extends AppCompatActivity {
                         return true;
 
                     case DragEvent.ACTION_DRAG_ENDED:
-                        // 恢复背景颜色
+
                         v.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                         return true;
 
@@ -211,6 +222,26 @@ public class MyKitchenActivity extends AppCompatActivity {
 
             dropZone.addView(linearLayout);
         }
+    }
+
+
+    private void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MyKitchenActivity.this);
+        builder.setTitle("Confirm Grouping")
+                .setMessage("You: Beef \nAmy: Pineapple")
+                .setPositiveButton("Agree", (dialog, which) -> {
+                    // 跳转到下一个Activity
+                    Intent intent = new Intent(MyKitchenActivity.this, Menu2.class);
+                    startActivity(intent);
+                })
+                .setNegativeButton("Cancel", (dialog, which) -> {
+                    // 关闭对话框
+                    dialog.dismiss();
+                });
+
+        // 创建并显示对话框
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
 
