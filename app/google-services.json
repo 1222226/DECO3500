@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338229509183",
+    "project_id": "deco-3500test",
+    "storage_bucket": "deco-3500test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338229509183:android:65242c90d77cb55b6c4c8a",
+        "android_client_info": {
+          "package_name": "com.example.test2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdxIROi_rhAy7Ety4RGuIqgILT1_7klcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
