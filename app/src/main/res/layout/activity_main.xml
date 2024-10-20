@@ -45,9 +45,7 @@
             android:textSize="18sp" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Second CardView, Positioned below the first CardView -->
 
-    <!-- Third CardView, Positioned below the second CardView -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/button_to_c"

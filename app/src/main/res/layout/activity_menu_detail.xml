@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-         /> <!-- 你可以用实际的图片资源替换这个占位符 -->
+         />
 
     <!-- TextView for recipe description -->
     <TextView
