@@ -1,4 +1,4 @@
-package com.example.test2;
+/*package com.example.test2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,4 +41,4 @@ public class SecondFragment extends Fragment {
         binding = null;
     }
 
-}
+}*/

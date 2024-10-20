@@ -1,4 +1,4 @@
-/*package com.example.test2;
+package com.example.test2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.test2.databinding.FragmentFirstBinding;
+import com.example.test2.databinding.FragmentSecond2Binding;
 
-public class FirstFragment extends Fragment {
+/*public class Second2Fragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private FragmentSecond2Binding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentSecond2Binding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,9 +29,9 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(v ->
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment)
+        binding.buttonSecond.setOnClickListener(v ->
+                NavHostFragment.findNavController(Second2Fragment.this)
+                        .navigate(R.id.action_Second2Fragment_to_First2Fragment)
         );
     }
 

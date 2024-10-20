@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 帖子标题 -->
+    <TextView
+        android:id="@+id/post_userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textColor="@color/platform_grey"
+        android:textSize="18sp"/>
+
+    <!-- 帖子内容 -->
+
+    <TextView
+        android:id="@+id/post_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Title"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <!-- 帖子内容 -->
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- 帖子图片 -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- 点赞数量 -->
+    <TextView
+        android:id="@+id/post_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Likes"
+        android:paddingTop="8dp"/>
+
+    <!-- 点赞按钮 -->
+    <Button
+        android:id="@+id/like_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:paddingTop="8dp"/>
+</LinearLayout>

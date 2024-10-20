@@ -1,4 +1,4 @@
-package com.example.test2;
+/*package com.example.test2;
 
 import android.os.Bundle;
 
@@ -49,4 +49,4 @@ public class Menu extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-}
+}*/

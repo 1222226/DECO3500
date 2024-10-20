@@ -8,7 +8,7 @@
     tools:context=".MyKitchenActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/kitchenTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
@@ -28,11 +28,12 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintTop_toBottomOf="@id/kitchenTitle" />
 
     <!-- 滑动视图 -->
     <HorizontalScrollView
         android:layout_width="match_parent"
+        android:id="@+id/ScrollView"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,4 +49,16 @@
             android:gravity="center" />
 
     </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Grouping"
+        app:layout_constraintTop_toBottomOf="@id/ScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
