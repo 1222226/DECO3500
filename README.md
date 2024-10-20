@@ -1,5 +1,5 @@
-### DECO3801/7381 Design Computing Studio 3 - Build Semester 2, 2024 
-## Project: Hight Perception
+### DECO3500 Social/Mobile Combuting Semester 2, 2024 
+## Team Name: CookDevCook
 ## Team Members: 
 
 1. [Introduction]
@@ -11,7 +11,7 @@
    This program is using internet so make sure your wifi of data is on. If you want to check and manupilate the backend for yourself, you can setup a Firebase project. To do it, First go to firebase and create an
    account, then create a project, then add a new android application, use 'com.example.test2' as the package name, then follow theinstruction, download the google-services.json file it generates, replace the
    google-services.json file existing(make sure the file name as 'google-services.json' unchanged), then follow the rest instructions. After setting up, you can
-   Sync the Project again and run. To make sure the data would upload into backend, you should create the space of Authentication, ReaL-time Database and Storage in Firebase.  
+   Sync the Project again and run. To make sure the data would upload into backend, you should create the space of Authentication, ReaL-time Database and Storage in Firebase, and change the database url in all javafiles.   
 4. [Usage]
    First, you should login. If you are testing on our firebase, the user registed are User1: name:'amy@qq.com', password:'123456';User2: name:'bob@qq.com', password:'123456'. Login both of the user in your devices.
    If you create your firebase, you can setup your users, but make sure there are 2 users login. 
@@ -30,45 +30,62 @@
 
    
 6. [Features]
-·Seamless Transition Height Change: The prototype allows players to change their size by interacting with game props like potions. Height transitions are smooth, preventing motion sickness and ensuring a natural experience.
-·Cartoon-style Virtual Scene: We built a cartoon-style dungeon scene where users can explore different visual effects and pass through the game levels we designed through height changes.
-·Advanced Interactive Features: Key interactive objects like treasure chests, doors, and gears use animations to enhance the gameplay experience. Players can interact with these objects, which respond based on their size and actions.
-·Advanced Interactive Features:Level Interaction and Traps: Various traps, such as rotating gears and swinging swords, challenge players to strategically adjust their size to progress. Collecting keys and unlocking doors adds complexity to the level design.
-·Jump and Haptic Feedback: The jump mechanic varies according to the player's size, and planned haptic feedback will provide physical sensations during object interactions.
-·Manual Interaction and Puzzle Mechanics: Players can manually grab and manipulate objects in the VR environment. Puzzle pieces can be placed on a board, with real-time feedback enhancing interactivity.
-7. [DirectoryStructure]
+·Login System
+·Multiple kitchen location options
+·Two users add ingredients in real time, and matching.
+·Recommend a menu based on the ingredients.
+·Two users select the same menu in real time and successfully book.
+·View the booking Detial
+·Cancel Booking.
+·Simulated cooking guide.
+·User can enter another user's private kitchen by scan QR code.
+·A forum that supports image uploads.
+
+
+8. [DirectoryStructure]
     Here’s an overview of the project’s directory structure:
     projectname/
-    │ 3
-    ├── Asserts/
-    │   ├── Scripts
-             ├── ScaleTransform.cs
-             ├── OVRPlayerControllerCustomize.cs
-             ├── GameFlow.cs
-             ├── Ball.cs
-             ├── CameraFollow.cs
-             ├── CollectPieces.cs
-             ├── BackPack.cs
+    │ 
+    ├── app
+    │   ├── Java(frontend/backend)
+             ├── MainAvtivity
+             ├── Booking
+             ├── Menu2
+             ├── MenuDetial
+             ├── MyKitchenActivity
+             ├── PrivateKitchen
+             ├── PublicKitchenActivity
+             ├── TimerActivity
+             ├── StepCompletedActivity
+             ├── Forum
+             ├── Login
+             ├── ProfileActivity
+             ├── DataBase(Create Initial Data Base)
+                    ├── Grouping
+                    ├── Ingredients
            
-    │   └── Prefabs
-    │   └── Materials
-    │   └── Scenes
-            │   └── MyScene
-            │   └── MyScene2
-    │   └── Source imported
-    │   └── ...
-   
+    │   ├── res(frontend)
+             ├── drawable(image sources)
+                    ....
+             ├── layout
+                    ...each javafile corresponding to a layout.xml
+                    ├──post_item
+             ├── Menu
+                    ├──bottom_nav_menu
+             ├── values
+                    ├──colors
+                    ├──strings
+             
+
     │
-    ├── packges
-    │   ├── ...
-    │   └── ...
+    ├── AndroidMenifest
+    ├── build.gradle
+    │   
     └── README.md         # xxxx
 
-8. [License]
-The assets used in this project are subject to the Unity Asset Store End User License Agreement (EULA). Please refer to the [Unity Asset Store Terms](https://unity3d.com/legal/as_terms) for more details.
 
 
-9. [Contact] 
+11. [Contact] 
     For any questions or support, please contact:
     - Yucheng.Pan@Student.uq.edu.au
     - [GitHub Profile](https://github.com/1222226/DECO3500)
