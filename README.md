@@ -3,7 +3,10 @@
 ## Team Members: 
 
 1. [Introduction]
-   
+   This is an Android app project aimed at enhancing social interactions among students living in dormitories by encouraging collaborative cooking. When using the app, two people can form a group. Students can select an available     spot in a public kitchen and contribute one ingredient, while the other student can contribute another ingredient. The system will recommend recipes based on the ingredients they provide, and both students will choose a recipe     together. They can then cook at the reserved time and location. We also offer a simulated cooking guide.
+   Additionally, students can invite others to cook in their dorm kitchen. The process involves posting a QR code in a prominent location, such as a lobby, indicating an invitation. Other students can scan the code to enter the       inviter's space and proceed with contributing ingredients, selecting a menu, and more.
+   Moreover, the app includes a forum where students can share their thoughts and photos of the cooking experience for other dormitory students to view.
+
 2. [Installation]
    This project is build on Android Studio. You can download the newest version of Android Stduio, install JDK and Android SDK(Recommend API 34) and open the project to view it. To run it, you can connect an android phone
    (Sumsung etc.), make sure they where under developer mode, and run the project, the app will be install on your phone. Or you can setup virtual devices in Android Studio.
