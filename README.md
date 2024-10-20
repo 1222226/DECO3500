@@ -4,10 +4,12 @@
 
 1. [Introduction]
    This is an Android app project aimed at enhancing social interactions among students living in dormitories by encouraging collaborative cooking. When using the app, two people can form a group. Students can select an available     spot in a public kitchen and contribute one ingredient, while the other student can contribute another ingredient. The system will recommend recipes based on the ingredients they provide, and both students will choose a recipe     together. They can then cook at the reserved time and location. We also offer a simulated cooking guide.
+   
    Additionally, students can invite others to cook in their dorm kitchen. The process involves posting a QR code in a prominent location, such as a lobby, indicating an invitation. Other students can scan the code to enter the       inviter's space and proceed with contributing ingredients, selecting a menu, and more.
+   
    Moreover, the app includes a forum where students can share their thoughts and photos of the cooking experience for other dormitory students to view.
 
-2. [Installation]
+3. [Installation]
    This project is build on Android Studio. You can download the newest version of Android Stduio, install JDK and Android SDK(Recommend API 34) and open the project to view it. To run it, you can connect an android phone
    (Sumsung etc.), make sure they where under developer mode, and run the project, the app will be install on your phone. Or you can setup virtual devices in Android Studio.
    For this project can interact between users, you'd better use 2 devices.
@@ -26,8 +28,10 @@
    ensure that user A and user B put the same ingredients. Then you can click on a receipe and view the detail of it, then click agree means you choose the recipe. If userA and userB choose the different recipe, the 2 receipe would
    appear in green background to inform users. Only if 2 users select the same receipe, that receipe would shows red and the cooking activity is registed. You can view the bookig information by click booking button in the homepage,
    in which you can click the Meal button to review the receipe detail again, click Start Timer to start a timer which is a simulation of a cooking process guide and cancel booking.
+   
    If you choose My Kitchen in homepage, which you want means to invite others to your private kitchen, then your userB should click Private Kitchen where inside is a Scanner. Just scan a whichever can userB enter userA's Kitchen,
    then the two of them can follow the steps above.
+   
    There's a another forum function which you can see by clicking the Community button in the homepage. You can view others post, or submit you own post by input UserID, titile, Content and select a photo from your album.
 
 
