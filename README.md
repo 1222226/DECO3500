@@ -1,6 +1,6 @@
 ### DECO3500 Social/Mobile Combuting Semester 2, 2024 
 ## Team Name: CookDevCook
-## Team Members: 
+## Team Members: Yuqiao Ye, Yucheng Pan, Zihan Chen, Sixuan Song
 
 1. [Introduction]
    This is an Android app project aimed at enhancing social interactions among students living in dormitories by encouraging collaborative cooking. When using the app, two people can form a group. Students can select an available     spot in a public kitchen and contribute one ingredient, while the other student can contribute another ingredient. The system will recommend recipes based on the ingredients they provide, and both students will choose a recipe     together. They can then cook at the reserved time and location. We also offer a simulated cooking guide.
